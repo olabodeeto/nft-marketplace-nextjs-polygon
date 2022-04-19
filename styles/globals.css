@@ -1,0 +1,26 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sitebg {
+  background: linear-gradient(rgba(66, 9, 210, 0.76), rgba(66, 9, 210, 0.617)),
+    url("../assets/bg.png") no-repeat;
+  background-size: cover;
+}
+.anim {
+  animation-name: anim;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  position: relative;
+  animation-direction: alternate;
+}
+
+@keyframes anim {
+  from {
+    top: 0rem;
+  }
+  to {
+    top: 4rem;
+  }
+}
